@@ -1,0 +1,10 @@
+# Do not include the confs file
+confs/
+
+# Do not include executables
+*.exe
+my_result
+
+# Do not include the metadata
+*:Zone.Identifier
+.DS_Store
