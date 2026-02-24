@@ -48,6 +48,7 @@ void System::step() {
        
     }
 }
+
 void System::enforceBoundaries(Disk & disk) {
         if (disk.x < 0) disk.x = 0;
         if (disk.x > boxSize) disk.x = boxSize;
@@ -56,6 +57,10 @@ void System::enforceBoundaries(Disk & disk) {
     }
 
 // HINT: PROVIDE A DEFINITION FOR A MEMBER FUNCTION OF THE SYSTEM CLASS CALLED uniform
+
+double System::uniform(double min, double max){
+    return (max-min)*this->dist(gen)+min;
+};
 
 void System::save(const std::string &filename){
     // save state of disks to file

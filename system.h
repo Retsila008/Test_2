@@ -14,8 +14,9 @@ class System {
         bool overlap(int i);
         void step();
         void enforceBoundaries(Disk & disk);
-        void save(const std::string &filename);
         double uniform(double min, double max);
+        void save(const std::string &filename);
+        
 
         std::vector<Disk> disks;
         double displacement;

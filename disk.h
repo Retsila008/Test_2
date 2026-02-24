@@ -12,7 +12,7 @@ class Disk {
         // Member Variables
         double x;
         double y;
-        double r;
+        double radius;
 };
 
 #endif

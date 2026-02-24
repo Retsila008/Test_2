@@ -4,6 +4,7 @@ confs/
 # Do not include executables
 *.exe
 my_result
+*.o
 
 # Do not include the metadata
 *:Zone.Identifier
