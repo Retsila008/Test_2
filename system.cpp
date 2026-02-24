@@ -1,10 +1,9 @@
 #include <fstream>
-//HINT: COMPLETE THE INCLUDE STATEMENT
 #include "system.h"
 #include "disk.h"
 
 
-System::System(int N, double displacement,double radius, double boxSize, int seed) {
+System::System(int N, double displacement,double radius, double boxSize, int seed){
 
         this->boxSize= boxSize;
         this->  dist = std::uniform_real_distribution<double>(0, 1);
@@ -55,8 +54,6 @@ void System::enforceBoundaries(Disk & disk) {
         if (disk.y < 0) disk.y = 0;
         if (disk.y > boxSize) disk.y = boxSize;
     }
-
-// HINT: PROVIDE A DEFINITION FOR A MEMBER FUNCTION OF THE SYSTEM CLASS CALLED uniform
 
 double System::uniform(double min, double max){
     return (max-min)*this->dist(gen)+min;

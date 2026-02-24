@@ -12,8 +12,7 @@ void Disk::move(double dx, double dy){
     this->y += dy;
 }
 
-double Disk::distance(Disk& other){
-    return std::sqrt((x - other.x)*(x - other.x) + (y - other.y)*(y - other.y));
+double Disk::distance(Disk& d){
+    return std::sqrt((x - d.x)*(x - d.x) + (y - d.y)*(y - d.y));
 }
 
-    // HINT: COMPLETE THE CALCULATION OF THE DISTANCE BETWEEN this DISK AND THE DISK other

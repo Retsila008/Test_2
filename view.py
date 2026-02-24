@@ -11,7 +11,7 @@ filenames = sorted(files, key=lambda x: int(x.split("/conf")[1]))
 
 # Create a new figure
 fig, ax = plt.subplots()
-ax.set(xlim=(0, 20), ylim=(0, 20), aspect='equal')
+ax.set(xlim=(-0.5, 20.5), ylim=(-0.5, 20.5), aspect='equal')
 
 # List to hold the circle patches (assume number of circles remains constant)
 circles = []
@@ -19,7 +19,7 @@ circles = []
 # Initialize the first frame
 data = np.loadtxt(filenames[0], skiprows=2, usecols=[1,2,3])
 for x, y, r in data:
-    circle = Circle((x, y), r, edgecolor='b', facecolor='none')
+    circle = Circle((x, y), r, edgecolor='b', facecolor='b')
     circles.append(circle)
     ax.add_patch(circle)
 

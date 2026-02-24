@@ -8,3 +8,4 @@
 
 [4] - Wrote the uniform and distance functions, created a makefile, edited the .gitignore to ignore object files and changed r to radius in disk.cpp
 
+[5] - Edited python files to add enhanced visualisation including blue dots and a larger box to prevent the particles clipping
